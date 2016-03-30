@@ -26,6 +26,7 @@ RUN apt-get update \
         ruby \
     && git clone --recurse-submodules https://github.com/ariya/phantomjs /tmp/phantomjs \
     && cd /tmp/phantomjs \
+    && git checkout 2.1.1 \
     && ./build.py --release --confirm --silent >/dev/null \
     && mv bin/phantomjs /usr/local/bin \
     && cd \
