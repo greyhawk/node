@@ -42,3 +42,4 @@ RUN apt-get update \
         python \
     && apt-get clean \
     && rm -rf /tmp/* /var/lib/apt/lists/*
+RUN apt-get install -y --no-install-recommends xfonts-wqy
