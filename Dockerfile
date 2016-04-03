@@ -3,6 +3,7 @@ RUN npm install -g cnpm
 RUN cnpm install -g supervisor http-server
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+        xfonts-wqy \
         ca-certificates \
         libsqlite3-dev \
         libfontconfig1-dev \
@@ -42,4 +43,3 @@ RUN apt-get update \
         python \
     && apt-get clean \
     && rm -rf /tmp/* /var/lib/apt/lists/*
-RUN apt-get install -y --no-install-recommends xfonts-wqy
