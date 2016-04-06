@@ -4,6 +4,7 @@ RUN cnpm install -g supervisor http-server
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         xfonts-wqy \
+        ttf-wqy-zenhei \
         ca-certificates \
         libsqlite3-dev \
         libfontconfig1-dev \
